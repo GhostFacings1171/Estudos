@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links Profile - Rafael Grande Schumacher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --green: hsl(75, 94%, 57%);
+            --white: hsl(0, 0%, 100%);
+            --grey-700: hsl(0, 0%, 20%);
+            --grey-800: hsl(0, 0%, 12%);
+            --grey-900: hsl(0, 0%, 8%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--grey-900);
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: var(--grey-800);
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            width: 100%;
+            max-width: 380px;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin-bottom: 24px;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .location {
+            color: var(--green);
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .description {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 24px;
+            color: var(--white);
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-button {
+            background-color: var(--grey-700);
+            color: var(--white);
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .link-button:hover {
+            background-color: var(--green);
+            color: var(--grey-900);
+        }
+
+        @media (max-width: 375px) {
+            .card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="card">
+        <img src="./pfpRafaelS.jpeg" alt="Rafael Schumacher" class="profile-img">
+        
+        <h1 class="name">Rafael Grande Schumacher</h1>
+        <p class="location">Osasco, SP, Brasil</p>
+        
+        <p class="description">"Web developer, Cybersegurança, Tecnologia da Informação, Desenvolvimento de Sistemas, Artista digital"</p>
+
+        <nav class="links-container">
+            <a href="https://github.com/GhostFacings1171" class="link-button" target="_blank">GitHub</a>
+            <a href="https://dribbble.com/rafael-schumacher" class="link-button" target="_blank">Dribbble</a>
+            <a href="https://www.linkedin.com/in/rafael-grande-schumacher-aa1782359/" class="link-button" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/rafael.g.schumacher/" class="link-button" target="_blank">Instagram</a>
+            <a href="mailto:rafaelgrandeschumacher@gmail.com" class="link-button" target="_blank">E-mail</a>
+            <a href="https://www.deviantart.com/ghostfacings1171" class="link-button" target="_blank">Deviant art</a>
+        </nav>
+    </main>
+
+</body>
+</html>
